@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fy.behavior.MainActivity">
+
+    <TextView
+        android:id="@+id/tvDepentent"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|left"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="au to"
+        android:textColor="#fff"
+        app:layout_behavior="com.fy.behavior.DependentBehavior" />
+
+</android.support.design.widget.CoordinatorLayout>
