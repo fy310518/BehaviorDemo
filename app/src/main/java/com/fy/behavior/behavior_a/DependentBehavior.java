@@ -1,4 +1,4 @@
-package com.fy.behavior;
+package com.fy.behavior.behavior_a;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
@@ -8,13 +8,13 @@ import android.view.View;
 import android.widget.TextView;
 
 /**
-     * 跟随 平移 behavior (某个view监听另一个view的状态变化，例如大小、位置、显示状态等)
+ * 跟随 平移 behavior (某个view监听另一个view的状态变化，例如大小、位置、显示状态等)
  * 这里的泛型是child的类型，也就是观察者View
  * Created by fangs on 2017/12/26.
  */
-public class DependentBehavior extends CoordinatorLayout.Behavior<View>{
+public class DependentBehavior extends CoordinatorLayout.Behavior<View> {
 
-//    带有参数的这个构造必须要重载，因为在CoordinatorLayout里利用反射去获取这个Behavior的时候就是拿的这个构造
+    //    带有参数的这个构造必须要重载，因为在CoordinatorLayout里利用反射去获取这个Behavior的时候就是拿的这个构造
     public DependentBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

@@ -18,14 +18,26 @@
             </intent-filter>
         </activity>
 
+
         <activity
-            android:name=".ScrollingActivity"
+            android:name=".coordinator.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
-            android:name=".one.ScrollingActivity"
+            android:name=".behavior_a.BehaviorOneActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".behavior_b.BehaviorScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+
+
 
     </application>
 

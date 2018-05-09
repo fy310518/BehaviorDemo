@@ -1,4 +1,4 @@
-package com.fy.behavior;
+package com.fy.behavior.behavior_b;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
     tools:context="com.fy.behavior.MainActivity">
 
     <TextView
-        android:id="@+id/tvDepentent"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_gravity="top|left"
-        android:background="#ff0000"
+        android:id="@+id/tvOneCoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f09"
         android:gravity="center"
-        android:text="Hello World!"
-        android:textColor="#fff" />
+        android:text="协调者布局 简单使用"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_gravity="top|right"
-        android:background="#3F51B5"
+        android:id="@+id/tvTwoCoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#adc"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="au to"
-        android:textColor="#fff"
-        app:layout_behavior="com.fy.behavior.DependentBehavior" />
+        android:text="协调者布局 "
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
 
-    <LinearLayout
-        android:layout_width="80dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center|top"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvOneBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#adf"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="自定义 行为 一"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tvOneBehavior"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Behavior 初识"
-            android:background="#666"/>
+    <TextView
+        android:id="@+id/tvTwoBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4df"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="自定义 行为 二"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
 
-    </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
