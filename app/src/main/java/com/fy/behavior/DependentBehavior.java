@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 /**
- * 跟随 平移 behavior (某个view监听另一个view的状态变化，例如大小、位置、显示状态等)
+     * 跟随 平移 behavior (某个view监听另一个view的状态变化，例如大小、位置、显示状态等)
+ * 这里的泛型是child的类型，也就是观察者View
  * Created by fangs on 2017/12/26.
  */
 public class DependentBehavior extends CoordinatorLayout.Behavior<View>{

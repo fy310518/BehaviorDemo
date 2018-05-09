@@ -25,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+
+        TextView tvOneBehavior = findViewById(R.id.tvOneBehavior);
+        tvOneBehavior.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, com.fy.behavior.one.ScrollingActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
     }
 
 }
